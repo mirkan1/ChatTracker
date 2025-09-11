@@ -1,0 +1,10 @@
+## Author: mirkan1
+## Interface: 90005
+## Notes: ChatTracker
+## Title: ChatTracker
+## Notes: An addon that notifies you with sound and red text when someone mentions specific keywords in chat, ignoring LFG messages.
+## Version: 1.0.0
+## DefaultState: Enabled
+## SavedVariables: callMeMaybe
+ChatTracker.lua
+ChatTracker.xml

@@ -85,6 +85,9 @@ SlashCmdList["CHATTRACKER"] = function(msg)
   elseif cmd == "list" then
     print("|cff00ff00[ChatTracker]|r Keywords: " .. table.concat(keywords, ", "))
     print("|cff00ff00[ChatTracker]|r Banned words: " .. table.concat(banned, ", "))
+  elseif cmd == "clear" then
+    notifiedSenders = {}
+    print("|cff00ff00[ChatTracker]|r Cleared notified senders.")
   else
     print("|cff00ff00[ChatTracker]|r Usage: /track addkw <word>, rmkw <word>, addban <word>, rmban <word>, on, off, list")
   end

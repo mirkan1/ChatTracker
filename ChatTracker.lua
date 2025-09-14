@@ -47,6 +47,7 @@ function ToggleFilter(state)
   end
 end
 
+-- Main initialization function
 function ChatTracker(self, event, msg, sender, ...)
   if not filterEnabled then return end
   for _, kw in ipairs(keywords) do
@@ -67,6 +68,7 @@ function ChatTracker(self, event, msg, sender, ...)
   end
 end
 
+-- Slash command handler
 SLASH_CHATTRACKER1 = "/track"
 SlashCmdList["CHATTRACKER"] = function(msg)
   local cmd, arg = msg:match("^(%S+)%s*(.-)$")

@@ -47,7 +47,7 @@ function ToggleFilter(state)
   end
 end
 
-function callMeMaybe(self, event, msg, sender, ...)
+function ChatTracker(self, event, msg, sender, ...)
   if not filterEnabled then return end
   for _, kw in ipairs(keywords) do
     local msg = msg:lower() or ""
@@ -92,3 +92,6 @@ SlashCmdList["CHATTRACKER"] = function(msg)
     print("|cff00ff00[ChatTracker]|r Usage: /track addkw <word>, rmkw <word>, addban <word>, rmban <word>, on, off, list")
   end
 end
+
+-- Apply the filters to msg events
+ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", ChatTracker)

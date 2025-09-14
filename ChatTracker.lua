@@ -97,7 +97,8 @@ SlashCmdList["CHATTRACKER"] = function(msg)
     filterEnabled = true
     print("|cff00ff00[ChatTracker]|r Reset all settings to default.")
   else
-    print("|cff00ff00[ChatTracker]|r Usage: /track addkw <word>, rmkw <word>, addban <word>, rmban <word>, on, off, list")
+    print("|cff00ff00[ChatTracker]|r Usage:")
+    print("/track addkw <word>, rmkw <word>, addban <word>, rmban <word>, on, off, list, clear, reset")
   end
 end
 
